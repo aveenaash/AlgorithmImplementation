@@ -12,19 +12,12 @@ private int[] arr;
 	{
 		for(int i=0;i<arr.length;i++)
 		{
-			int minPos=i;
-			int min=arr[i];
-			//finding minimum from the array
 			for(int j=i+1;j<arr.length;j++)
 			{
-				if(arr[j]<min) 
-				{
-					minPos=j;
-					min=arr[j];
-				}
+				
 			}
 			//swapping minimum value with the first element of unsorted list
-			swap(i,minPos);
+			//swap(i,minPos);
 			//System.out.println("minPos=== "+minPos+ " Arrya   "+printArr());			
 		}
 	}
