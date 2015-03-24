@@ -1,0 +1,14 @@
+Merge Sort
+
+--------------------------------------------------------------------------
+Merge sort is a fast, stable sorting routine with guaranteed O(n*log(n)) efficiency. When 
+sorting arrays, merge sort requires additional scratch space proportional to the size of 
+the input array. Merge sort is relatively simple to code and offers performance typically 
+only slightly below that of quicksort.
+
+Steps to implement Merge Sort:
+
+1) Divide the unsorted array into n partitions, each partition contains 1 element. Here the 
+one element is considered as sorted.
+2) Repeatedly merge partitioned units to produce new sublists until there is only 1 sublist 
+remaining. This will be the sorted list at the end.

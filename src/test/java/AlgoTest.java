@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.algorithm.BubbleSort;
+import com.algorithm.MergeSort;
 import com.algorithm.SelectionSort;
 
 
@@ -46,5 +47,20 @@ public class AlgoTest {
 		assertArrayEquals(expected, bs.getArr());
 		
 	}
+	
+	@Test
+	public void testMergeSort() {
+		MergeSort ms = new MergeSort(new int[] { 38,12, 27, 43,4,1, 3, 9, 82, 10 });		
+		int[] expected= new int[] {1, 3, 4, 9, 10, 12, 27, 38, 43, 82};
+		long startTime = System.currentTimeMillis();
+		ms.splitArray(0, ms.getArr().length - 1);		
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		System.out.println(totalTime);
+		System.out.println("Sorted ::: " + ms.printArr());
+		assertArrayEquals(expected, ms.getArr());
+		
+	}
+	
 
 }
